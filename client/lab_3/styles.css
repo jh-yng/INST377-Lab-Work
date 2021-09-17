@@ -9,8 +9,8 @@ h2 {
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .menu-container {
@@ -26,6 +26,7 @@ a {
   width: 900px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header-container {
@@ -93,6 +94,7 @@ a {
 .photo-grid-container {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .photo-grid {
@@ -143,3 +145,9 @@ a {
   width: 300px;
 }
 
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .menu {
+    width: 50%;
+  }
+}
