@@ -146,6 +146,10 @@ a {
   body {
     background-color: #F09A9D; /* Red */
   }
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Tablet Styles */
