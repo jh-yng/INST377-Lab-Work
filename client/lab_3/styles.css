@@ -141,47 +141,7 @@ a {
   width: 300px;
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 400px) {
-  body {
-    background-color: #f09a9d; /* Red */
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .photo-grid-container {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #f5cf8e; /* Yellow */
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .photo-grid-container {
-    width: 100%;
-    height: auto;
-  }
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  body {
-    background-color: #b2d6ff; /* Blue */
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .photo-grid-container {
-    width: 100%;
-    height: auto;
-  }
+img {
+  width: 100%;
+  height: auto;
 }
