@@ -36,14 +36,14 @@ body {
 }
 
 .sky {
-  background-image: url("fb-game-background.png");
+  background-color: blue;
   width: 500px;
   height: 580px;
   position: absolute;
 }
 
 .ground {
-  background-image: url("bottom-background.png");
+  background-color: brown;
   width: 500px;
   height: 150px;
   position: absolute;
@@ -56,8 +56,6 @@ body {
   position: absolute;
   width: 60px;
   height: 45px;
-  left: 220px;
-  bottom: 100px;
 }
 
 .obstacle {
@@ -73,41 +71,4 @@ body {
   width: 60px;
   height: 300px;
   position: absolute;
-}
-
-@keyframes slideright {
-  from {
-    background-position: 10000%;
-  }
-  to {
-    background-position: 0%;
-  }
-}
-
-@-webkit-keyframes slideright {
-  from {
-    background-position: 10000%;
-  }
-  to {
-    background-position: 0%;
-  }
-}
-
-.ground-container {
-  height: 150px;
-  width: 580px;
-  left: 80px;
-  position: absolute;
-}
-
-.ground-moving {
-  position: absolute;
-  top: 580px;
-  height: 150px;
-  background-image: url("bottom-background.png");
-  background-repeat: repeat-x;
-  animation: slideright 100s infinite linear;
-  -webkit-animation: slideright 100s infinite linear;
-  width: 100%;
-  z-index: +1;
 }

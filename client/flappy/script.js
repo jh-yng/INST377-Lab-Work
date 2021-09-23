@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const bird = document.querySelector(".bird");
-  const gameDisplay = document.querySelector(".game-container");
-  const ground = document.querySelector(".ground-moving");
+  const bird = document.querySelector('.bird');
+  const gameDisplay = document.querySelector('.game-container');
+  const ground = document.querySelector('.ground');
 
   let birdLeft = 220;
   let birdBottom = 100;
-  let gravity = 3;
+  let gravity = 2;
   let isGameOver = false;
   let gap = 430;
 
@@ -78,7 +78,5 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("game over");
     isGameOver = true;
     document.removeEventListener("keyup", control);
-    ground.classList.add("ground");
-    ground.classList.remove("ground-moving");
   }
 });
