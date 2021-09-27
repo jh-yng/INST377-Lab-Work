@@ -14,16 +14,10 @@ document
     moveToPrevSlide();
   });
 
-function updateSlidePosition(a) {
-  if (slidePosition === 0 && a === -1) {
-    slides[totalSlides - 1].classList.remove("carousel_item--visible");
-    slides[totalSlides - 1].classList.add("carousel_item--hidden");
-  } else if (slidePosition + 1 == totalSlides && a === 1) {
-    slides[0].classList.remove("carousel_item--visible");
-    slides[0].classList.add("carousel_item--hidden");
-  } else {
-    slides[slidePosition + a].classList.remove("carousel_item--visible");
-    slides[slidePosition + a].classList.add("carousel_item--hidden");
+function updateSlidePosition() {
+  for (let i = 0; i < totalSlides; i++) {
+    slides[i].classList.remove("carousel_item--visible");
+    slides[i].classList.add("carousel_item--hidden");
   }
   slides[slidePosition].classList.add("carousel_item--visible");
 }
@@ -34,7 +28,7 @@ function moveToNextSlide() {
   } else {
     slidePosition++;
   }
-  updateSlidePosition(-1);
+  updateSlidePosition();
 }
 function moveToPrevSlide() {
   if (slidePosition === 0) {
@@ -42,5 +36,5 @@ function moveToPrevSlide() {
   } else {
     slidePosition--;
   }
-  updateSlidePosition(1);
+  updateSlidePosition();
 }
