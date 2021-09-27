@@ -15,7 +15,7 @@ document
   });
 
 function updateSlidePosition(a) {
-  if (slidePosition - 1 === -1 && a === -1) {
+  if (slidePosition === 0 && a === -1) {
     slides[totalSlides - 1].classList.remove("carousel_item--visible");
     slides[totalSlides - 1].classList.add("carousel_item--hidden");
   } else if (slidePosition + 1 == totalSlides && a === 1) {
