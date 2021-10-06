@@ -1,0 +1,47 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yang, Lab 5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+      <div class="box" style="background-color:rgb(226, 255, 247);">Jaeuk Yang: Lab 5</div>
+      <div class="columns is-vcentered" style="justify-content: center;">
+        <div class="column is-narrow">
+          <div class="box">
+            <form action="/api">
+              <div class="field">
+                <label class="label">First Name</label>
+                <div class="control">
+                  <input class="input">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Food Preferences</label>
+                <div class="control">
+                  <input class="input">
+                </div>
+              </div>
+              <fieldset class="legacy-form-row">
+                <legend>Veggie or Vegan</legend>
+                <input id="talk-type-1" name="veggie or vegan" type="radio" value="value" />
+                <label for="talk-type-1" class="radio-label">Yes</label>
+                <input id="talk-type-2" name="talk-type" type="radio" value="no" checked />
+                <label for="talk-type-2" class="radio-label">No</label>
+              </fieldset>
+              <button class="button is-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="box">Describe your talk in 500 words or less
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
