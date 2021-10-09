@@ -32,6 +32,7 @@ async function windowActions() {
           `<span class ="h1">${event.target.value}</span>`
         );
         return `
+            <div class = "result">
             <ul class="suggestions">
                 <li><div class="name">${place.name}</div></li>
                 <div class="category">${place.category}</div>
@@ -39,6 +40,8 @@ async function windowActions() {
                 <div class="city">${place.city}</div>
                 <div class="zip">${place.zip}</div>
             </ul>
+            </div>
+            <br>
             `;
       })
       .join("");
